@@ -1,0 +1,412 @@
+﻿{
+  "name": "bug",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "comment": "• <b>UWAGA!</b> Komenda ta wymaga modułu mkdirp. Zainstaluj go! <b>npm install mkdirp --save</b> i ponownie uruchom DBM'a.",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "comment": "• <b>Zrobione przez:</b> Taki Tam Slu#5916",
+      "color": "#00ffff",
+      "name": "Comment"
+    },
+    {
+      "comment": "<b>--------------------------------------------------------------------------</b>",
+      "color": "#800040",
+      "name": "Comment"
+    },
+    {
+      "comment": "• Posiadasz wersje: <b>v0.5</b>",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "• <b>Nowości znajdziesz w pliku Co Nowego.txt</b>",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "<b>--------------------------------------------------------------------------</b>",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "comment": "• Pamiętaj, że ten skrypt nie wysyła do Ciebie raportów, tylko tworzy plik na twoim komputerze. ",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "comment": "• Za każdym razem, po zastosowaniu pojawi ci się raport w projekcie twojego bota. Jest to strona WWW. <i>HTML</i>",
+      "color": "#ff0000",
+      "name": "Comment"
+    },
+    {
+      "comment": "<b>--------------------------------------------------------------------------</b>",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "ikonaSerwera",
+      "name": "Store Server Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatarSprawcy",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "19",
+      "storage": "1",
+      "varName2": "botPrefix",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "comment": "<u>Sprawdzam dane...</u>",
+      "color": "#000080",
+      "name": "Comment"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "0",
+      "iftrue": "0",
+      "iftrueVal": "4",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "",
+      "author": "Wysłanie wiadomości nie powiodło się",
+      "color": "#FEA101",
+      "url": "",
+      "authorIcon": "${tempVars(\"ikonaSerwera\") || \"https://db.filemon-bot.pl/bot/img.userERR01.png\"}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatarSprawcy\") || \"https://db.filemon-bot.pl/bot/img.userERR01.png\"}",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed-blad1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-blad1",
+      "message": "Prawdopodobnie nie podałeś żadnego wyjaśnienia błędu lub jest on za krótki.\n`${tempVars(\"botPrefix\") || \"//\"}bug <opis>`\n\n> Komenda stworzona przez **Taki Tam Slu 🔥#5916**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-blad1",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "botMember",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "botMember",
+      "permission": "CREATE_INSTANT_INVITE",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "title": "",
+      "author": "Wysłanie wiadomości nie powiodło się",
+      "color": "#FEA101",
+      "url": "",
+      "authorIcon": "${tempVars(\"ikonaSerwera\") || \"https://db.filemon-bot.pl/bot/img.userERR01.png\"}",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatarSprawcy\") || \"https://db.filemon-bot.pl/bot/img.userERR01.png\"}",
+      "timestamp": "true",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed-blad2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-blad2",
+      "message": "Nie posiadam uprawnień do tworzenia zaproszeń na tym serwerze, by administrator bota mógł wejść na serwer i rozpatrzeć problem.\n> Komenda stworzona przez **Taki Tam Slu 🔥#5916**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-blad2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "maxUses": "",
+      "lifetime": "",
+      "tempInvite": "false",
+      "unique": "true",
+      "storage": "1",
+      "varName2": "zapro",
+      "name": "Create Invite"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "Opis-Buga",
+      "name": "Store Command Params"
+    },
+    {
+      "comment": "Wszystkie sekcje, błędy użytkownika popełnione w użyciu polecenia sprawdzone! ",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "<b>Teraz sprawdzimy cenne informację o użytkowniku...</b>",
+      "color": "#ffff00",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "22",
+      "storage": "1",
+      "varName2": "nickTagSprawcy",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "3",
+      "storage": "1",
+      "varName2": "nickSprawcy",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "idSprawcy",
+      "name": "Store Member Info"
+    },
+    {
+      "comment": "<b>No i git! Informację o serwerze...</b>",
+      "color": "#00FF00",
+      "name": "Comment"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "nazwaSerwera",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "4",
+      "storage": "1",
+      "varName2": "region",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "idSerwera",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "11",
+      "storage": "1",
+      "varName2": "tworcaSerwera",
+      "name": "Store Server Info"
+    },
+    {
+      "member": "2",
+      "varName": "tworcaSerwera",
+      "info": "7",
+      "storage": "1",
+      "varName2": "tworcaSerwera.NICK",
+      "name": "Store Member Things"
+    },
+    {
+      "member": "2",
+      "varName": "tworcaSerwera",
+      "info": "1",
+      "storage": "1",
+      "varName2": "tworcaSerwera.ID",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "36",
+      "storage": "1",
+      "varName2": "osoby.na.SERWERZE",
+      "name": "Store Server Info"
+    },
+    {
+      "comment": "<b>--------------------------------------------------------------------------</b>",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "type": "3",
+      "storage": "1",
+      "varName": "godzina",
+      "name": "Store Time Info"
+    },
+    {
+      "type": "4",
+      "storage": "1",
+      "varName": "minuta",
+      "name": "Store Time Info"
+    },
+    {
+      "type": "5",
+      "storage": "1",
+      "varName": "sekunda",
+      "name": "Store Time Info"
+    },
+    {
+      "type": "0",
+      "storage": "1",
+      "varName": "rok",
+      "name": "Store Time Info"
+    },
+    {
+      "type": "1",
+      "storage": "1",
+      "varName": "miesiac",
+      "name": "Store Time Info"
+    },
+    {
+      "type": "2",
+      "storage": "1",
+      "varName": "dzien",
+      "name": "Store Time Info"
+    },
+    {
+      "comment": "Wszystko git! Wysyłamy raport na serwer...",
+      "color": "#00ffff",
+      "name": "Comment"
+    },
+    {
+      "comment": "<b>--------------------------------------------------------------------------</b>",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "comment": "• <u><b>/\\& UWAGA! &/\\</b</u>",
+      "color": "#800040",
+      "name": "Comment"
+    },
+    {
+      "comment": "• Plik z raportem stworzy ci się w lokalizacji: ",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "comment": "• <code><b>W głównym katalogu projektu twojego bota.</b></code>",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "input": "<!DOCTYPE html>\n<!--\n    Copyright © 2019. All rights reserved.\n    • Autor: Taki Tam Slu#5916\n\t• Możesz korzystać z tej komendy, skryptu jeśli zostawisz ten wpis. \n-->\n<html lang=\"pl\">\n<head>\n    <meta charset=\"utf-8\" />\n\t<title>Zgłoszenie Błędu w Bocie</title>\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://db.filemon-bot.pl/bug/style.css\">\n    <link rel=\"shortcut icon\" src=\"https://db.filemon-bot.pl/bug/favicon.ico\" />\n</head>\n<body>\n    <div class=\"header\">\n        Błąd zgłosił <code>${tempVars(\"nickSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}</code>\n    </div>\n    <div class=\"headerStep2\">\n\t\t<b>Data:</b> \n\t\t<code>\n            ${tempVars(\"dzien\")}.${tempVars(\"miesiac\")}.${tempVars(\"rok\")},\n\t\t</code>\n\t\t<b>o godzienie:</b>\n\t\t<code>\n            ${tempVars(\"godzina\")}:${tempVars(\"minuta\")}:${tempVars(\"sekunda\")}\n\t\t</code><br>\n        <b>\n            Bot:\n        </b>\n        <code>Jeśli masz kilka botów i chcesz tę komende w nich umieścić, to jest właśnie miejsce na nick bota.</code><br>\n    </div>\n    <hr>\n    \n    <div class=\"field\">\n        » <b>Informacje o zgłaszającym</b> «\n    </div>\n    <font color=\"white\" class=\"shadows\">\n        • <b>Nick twórcy zdarzenia:</b> ${tempVars(\"nickTagSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Identyfikator zgłaszającego:</b> ${tempVars(\"idSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Link awatara:</b> <a href=\"${tempVars(\"avatarSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" title=\"Awatar użytkownika ${tempVars(\"nickSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" target=\"_blank\"><b>Kliknij</b></a><br><br>\n    </font>\n    \n    <div class=\"field\">\n        » <b>Informacje o serwerze</b> «\n    </div>\n    <a href=\"${tempVars(\"zapro\")}\" title=\"Zaproszenie na serwer na którym dokonano czynu.\" target=\"_blank\">\n        <center>\n            <button class=\"button button1\">» <span>Wejdź na serwer</span> «</button>\n        </center>\n    </a>\n    <font color=\"white\" class=\"shadows\">\n        • <b>Nazwa serwera:</b> ${tempVars(\"nazwaSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Identyfikator:</b> ${tempVars(\"idSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Region:</b> ${tempVars(\"region\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Założyciel:</b>${tempVars(\"tworcaSerwera.NICK\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Identyfikator założyciela:</b> ${tempVars(\"tworcaSerwera.ID\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Ludność na serwerze:</b> ${tempVars(\"osoby.na.SERWERZE\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}<br>\n        • <b>Link do ikony gildii:</b> <a href=\"${tempVars(\"ikonaSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" title=\"Ikona serwera ${tempVars(\"nazwaSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" target=\"_blank\"><b>Kliknij</b></a><br>\n    </font>\n    <hr>\n\n    <div class=\"imgLeft\">\n        <font size=\"4px\">\n            • Awatar użytkownika:<br>\n        </font>\n        <a href=\"${tempVars(\"avatarSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" title=\"Awatar użytkownika ${tempVars(\"nickSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" target=\"_blank\">\n            <img class=\"animate\" src=\"${tempVars(\"avatarSprawcy\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" alt=\"Wystąpił problem podczas ładowania awatara twórcy tego zdarzenia. Dziwne...\" width=\"220px\" height=\"200px\" style='float:left' />\n        </a>\n    </div>\n    <div class=\"imgRight\">\n        <font size=\"4px\">\n            • Ikona serwera:<br>\n        </font>\n        <a href=\"${tempVars(\"ikonaSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" title=\"Ikona serwera ${tempVars(\"nazwaSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" target=\"_blank\">\n\t\t\t<img class=\"animate\" src=\"${tempVars(\"ikonaSerwera\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}\" alt=\"Wystąpił problem podczas ładowania ikony serwera. Dziwne...\" width=\"220px\" height=\"200px\" style='float:right' />\n        </a>\n    </div>\n    \n    <div class=\"params\">\n        <div class=\"paramsField\">\n            » Wymagany parametr «\n        </div>\n        <code>• Tekst po komendzie, który napisał użytkownik zgłaszający problem:</code><br>\n        <textarea readonly>${tempVars(\"Opis-Buga\") || \"<b>Błąd bota lub skryptu. Przepraszam 😥!</b>\"}</textarea>\n    </div>\n    <hr>\n\n    <div class=\"footer\">\n        • <b>Autor:</b> <code>Taki Tam Slu#5916</code> • <b>Wersja:</b> <code>v0.6</code> • <b>Mój bot oraz moje serwery</b><br>\n        <a href=\"https://discord.gg/26fu8Wf\" title=\"Fani Anime (PL) ©\" target=\"_blank\"><button>Serwer Fani Anime (PL) ©</button></a>\n        <a href=\"https://discordbots.org/bot/546058545917984769#filemon-bot\" title=\"FilemonBot™#3100 - Dodaj bota na swój serwer.\" target=\"_blank\"><button>Bot Autora FilemonBot™#3100</button></a>\n\t\t<a href=\"https://discord.gg/sYnyd6m\" title=\"FilemonBot™#3100 - Serwer support bota.\" target=\"_blank\"><button>Wspracie naszego bota</button></a> \n    </div>\n</body>\n</html>",
+      "format": "",
+      "filename": "${tempVars(\"nickSprawcy\")} [NazwaTwegoBota].html",
+      "filepath": "./",
+      "filetask": "2",
+      "name": "File Control"
+    },
+    {
+      "comment": "<b>--------------------------------------------------------------------------</b>",
+      "color": "#000000",
+      "name": "Comment"
+    },
+    {
+      "title": "",
+      "author": "✅ Sukces! ✅",
+      "color": "#00FF00",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"ikonaSerwera\") || \"http://db.filemon-bot.pl/bot/err/err01.png\"}",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatarSprawcy\") || \"http://db.filemon-bot.pl/bot/err/err02.png\"}",
+      "storage": "1",
+      "varName": "embed-done",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-done",
+      "message": "Wiadomość została dostarczona na serwer bota. Odczekuj na odpowiedź.\n> Komenda stworzona przez **Taki Tam Slu#5916**\n\n__**Treść twojego raportu:**__\n```\n${tempVars(\"Opis-Buga\") || \"Błąd w skrypcie, przepraszam...\"}\n```",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed-done",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "tosend": "-------------------------------------------------------------------------------------------------\nUżytkownik ${tempVars(\"nickTagSprawcy\") || \"<Błąd!>\"} wygenerował nowy raport. Sprawdź go!\n-------------------------------------------------------------------------------------------------",
+      "name": "Send Message to Console"
+    }
+  ],
+  "_id": "Sizyp",
+  "comType": "0"
+}
